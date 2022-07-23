@@ -1,9 +1,9 @@
-CREATE TABLE zip_codes_with_zones
+CREATE TABLE zip_codes
 (
 id INT PRIMARY KEY,
 sid INT,
 default_state CHAR(2),
-default_city VARCHAR(30),
+city VARCHAR(50),
 default_type VARCHAR(10),
 zip_code CHAR(5),
 hardiness_zone CHAR(3)
@@ -11,7 +11,7 @@ hardiness_zone CHAR(3)
 
 --
 
-INSERT INTO zip_codes_with_zones (id, sid, default_state, default_city, default_type, zip_code, hardiness_zone) VALUES
+INSERT INTO zip_codes (id, sid, default_state, city, default_type, zip_code, hardiness_zone) VALUES
 (4922, 7, 'CO', 'ASPEN', 'STANDARD', '81611', '6a'),
 (4923, 7, 'CO', 'ASPEN', 'PO BOX', '81612', '5b'),
 (4961, 7, 'CO', 'BOULDER', 'STANDARD', '80301', '5b'),

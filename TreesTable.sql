@@ -1,20 +1,20 @@
 CREATE TABLE treesTable(
-   ID                   INTEGER NOT NULL PRIMARY KEY 
-  ,growing_zone         INTEGER NOT NULL  
-  ,tree_name            VARCHAR(0) NOT NULL
-  ,botanical_name       VARCHAR(5) NOT NULL
+  ID                    INTEGER NOT NULL PRIMARY KEY 
+  ,growing_zone         INTEGER  
+  ,tree_name            VARCHAR(30)
+  ,botanical_name       VARCHAR(45)
   ,tree_images          VARCHAR(56) 
-  ,overview_description VARCHAR(4) NOT NULL
-  ,sun_preference       VARCHAR(23) NOT NULL
-  ,soil_preference      VARCHAR(16) NOT NULL
-  ,mature_height        VARCHAR(12) NOT NULL
-  ,mature_spread        VARCHAR(12) NOT NULL
-  ,growth_speed         VARCHAR(6) NOT NULL
-  ,flower_color         VARCHAR(11) NOT NULL
-  ,foliage_color        VARCHAR(11) NOT NULL
-  ,fall_color           VARCHAR(30) NOT NULL
-  ,pollinator_friendly  VARCHAR(3) NOT NULL
-  ,outgoing_link        VARCHAR(58) NOT NULL
+  ,overview_description VARCHAR(75)
+  ,sun_preference       VARCHAR(23)
+  ,soil_preference      VARCHAR(16)
+  ,mature_height        VARCHAR(12)
+  ,mature_spread        VARCHAR(12)
+  ,growth_speed         VARCHAR(6)
+  ,flower_color         VARCHAR(11)
+  ,foliage_color        VARCHAR(11)
+  ,fall_color           VARCHAR(30)
+  ,pollinator_friendly  VARCHAR(3)
+  ,outgoing_link        VARCHAR(60)
 );
 INSERT INTO treesTable(ID,growing_zone,tree_name,botanical_name,tree_images,overview_description,sun_preference,soil_preference,mature_height,mature_spread,growth_speed,flower_color,foliage_color,fall_color,pollinator_friendly,outgoing_link) VALUES (1,4,'Jane Magnolia Tree','Magnolia x ''Jane''','Store in database?  Or reference NatureHills.com photos?','????','Full Sun, Partial Shade','Widely Adaptable','10 - 15 Feet','8 - 10 Feet','Medium','Pink, White','Green','Orange','Yes','https://www.naturehills.com/magnolia-x-jane');
 INSERT INTO treesTable(ID,growing_zone,tree_name,botanical_name,tree_images,overview_description,sun_preference,soil_preference,mature_height,mature_spread,growth_speed,flower_color,foliage_color,fall_color,pollinator_friendly,outgoing_link) VALUES (2,5,'Jane Magnolia Tree','Magnolia x ''Jane''',NULL,'????','Full Sun, Partial Shade','Widely Adaptable','10 - 15 Feet','8 - 10 Feet','Medium','Pink, White','Green','Orange','Yes','https://www.naturehills.com/magnolia-x-jane');
