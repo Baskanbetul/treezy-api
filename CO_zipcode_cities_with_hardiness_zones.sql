@@ -151,6 +151,6 @@ INSERT INTO zip_codes_with_zones (id, sid, default_state, default_city, default_
 (5242, 7, 'CO', 'GRAND JUNCTION', 'STANDARD', '81505', '7a'),
 (5243, 7, 'CO', 'GRAND JUNCTION', 'STANDARD', '81506', '6b'),
 (5244, 7, 'CO', 'GRAND JUNCTION', 'STANDARD', '81507', '7a'),
-(5481, 7, 'CO', 'STEAMBOAT SPRINGS', 'PO BOX', '80477', ''),
-(5482, 7, 'CO', 'STEAMBOAT SPRINGS', 'STANDARD', '80487', ''),
-(5483, 7, 'CO', 'STEAMBOAT SPRINGS', 'PO BOX', '80488', '');
+(5481, 7, 'CO', 'STEAMBOAT SPRINGS', 'PO BOX', '80477', '5a'),
+(5482, 7, 'CO', 'STEAMBOAT SPRINGS', 'STANDARD', '80487', '4b'),
+(5483, 7, 'CO', 'STEAMBOAT SPRINGS', 'PO BOX', '80488', '4a');
