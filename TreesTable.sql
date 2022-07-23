@@ -1,10 +1,10 @@
 CREATE TABLE treesTable(
-   ID                   INTEGER  NOT NULL PRIMARY KEY 
-  ,growing_zone         INTEGER  NOT NULL  
+   ID                   INTEGER NOT NULL PRIMARY KEY 
+  ,growing_zone         INTEGER NOT NULL  
   ,tree_name            VARCHAR(0) NOT NULL
-  ,botapical_name       VARCHAR(5) NOT NULL
+  ,botanical_name       VARCHAR(5) NOT NULL
   ,tree_images          VARCHAR(56) 
-  ,Overview_descpiption VARCHAR(4) NoT NULL
+  ,overview_description VARCHAR(4) NOT NULL
   ,sun_preference       VARCHAR(23) NOT NULL
   ,soil_preference      VARCHAR(16) NOT NULL
   ,mature_height        VARCHAR(12) NOT NULL
