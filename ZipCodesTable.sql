@@ -140,8 +140,7 @@ INSERT INTO zip_codes (id, sid, default_state, city, default_type, zip_code, gro
 (5153, 7, 'CO', 'DENVER', 'UNIQUE', '80291', '5'),
 (5154, 7, 'CO', 'DENVER', 'STANDARD', '80293', '5'),
 (5155, 7, 'CO', 'DENVER', 'STANDARD', '80294', '5'),
-(5156, 7, 'CO', 'DENVER', 'STANDARD', '80299', '5')
-(5166, 7, 'CO', 'DURANGO', 'STANDARD', '81301', '6'),
+(5156, 7, 'CO', 'DENVER', 'STANDARD', '80299', '5'),
 (5167, 7, 'CO', 'DURANGO', 'PO BOX', '81302', '6'),
 (5168, 7, 'CO', 'DURANGO', 'STANDARD', '81303', '6'),
 (5238, 7, 'CO', 'GRAND JUNCTION', 'STANDARD', '81501', '5'),
