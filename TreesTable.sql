@@ -4,7 +4,7 @@ CREATE TABLE treesTable(
   ,tree_name            VARCHAR(30)
   ,botanical_name       VARCHAR(45)
   ,tree_images          VARCHAR(56) 
-  ,overview_description VARCHAR(75)
+  ,overview_description VARCHAR(450)
   ,sun_preference       VARCHAR(23)
   ,soil_preference      VARCHAR(16)
   ,mature_height        VARCHAR(12)
