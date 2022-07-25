@@ -15,12 +15,26 @@ const getTrees = (request, response) => {
     }
     response.status(200).json(results.rows)
   })
-  console.log('get request')
+  console.log('get trees request')
 }
 
-app
-  .route('/api/v1/trees')
-  .get(getTrees)
+  const getZip = (request, response) => {
+    pool.query('SELECT * FROM zip_codes', (error, results) => {
+      if (error) {
+        throw error
+      }
+      response.status(200).json(results.rows)
+    })
+    console.log('get zip codes request')
+  }
+
+  app
+    .route('/api/v1/trees')
+    .get(getTrees)
+
+  app
+    .route('/api/v1/zip')
+    .get(getZip)
   
 app.listen(process.env.PORT || 3002, () => {
 	console.log(`Server listening`);
