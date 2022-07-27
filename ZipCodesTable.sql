@@ -6,7 +6,7 @@ default_state CHAR(2),
 city VARCHAR(50),
 default_type VARCHAR(10),
 zip_code CHAR(5),
-growing_zone CHAR(2)
+growing_zone INTEGER
 );
 INSERT INTO zip_codes (id, sid, default_state, city, default_type, zip_code, growing_zone) VALUES
 (4922, 7, 'CO', 'ASPEN', 'STANDARD', '81611', 6),
