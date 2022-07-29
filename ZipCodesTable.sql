@@ -1,5 +1,4 @@
-CREATE TABLE zip_codes
-(
+CREATE TABLE zip_codes(
 id INT PRIMARY KEY,
 sid INT,
 default_state CHAR(2),

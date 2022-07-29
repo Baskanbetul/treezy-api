@@ -499,8 +499,7 @@ INSERT INTO trees(ID,growing_zone,tree_name,botanical_name,overview_description,
 <li>Native Disease-Resistance</li>
 <ul>','Full Sun, Partial Shade','Well Drained','20 - 25 feet','15 - 20 feet','Medium','White','Blue-Green','Orange, Red','Yes','https://www.naturehills.com/autumn-brilliance-serviceberry','https://raw.githubusercontent.com/irmakerdem/tree-pal-api/main/assets/autumn-brilliance/autumn-brilliance-serviceberry-multi-stemmed.webp','https://raw.githubusercontent.com/irmakerdem/tree-pal-api/main/assets/autumn-brilliance/autumn-brilliance-serviceberry-blooms.webp','https://raw.githubusercontent.com/irmakerdem/tree-pal-api/main/assets/autumn-brilliance/autumn-brilliance-serviceberry-full-600x600.webp','https://raw.githubusercontent.com/irmakerdem/tree-pal-api/main/assets/autumn-brilliance/autumn-brilliance-serviceberry-4-800x800.webp','https://raw.githubusercontent.com/irmakerdem/tree-pal-api/main/assets/autumn-brilliance/autumn-brilliance-serviceberry-fall-color.webp');
 
-CREATE TABLE zip_codes
-(
+CREATE TABLE zip_codes(
 id INT PRIMARY KEY,
 sid INT,
 default_state CHAR(2),
