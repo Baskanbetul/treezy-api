@@ -28,9 +28,23 @@ const getTrees = (request, response) => {
     console.log('get zip codes request')
   }
 
+  const getSingleTree = (request, response) => {
+    pool.query('SELECT * FROM trees, WHERE id = $1', [id], (error, results) => {
+      if (error) {
+        throw error
+      }
+      response.status(200).json(results.rows)
+    })
+  }
+
+
   app
     .route('/api/v1/trees')
     .get(getTrees)
+
+  app
+    .route('/api/v1/trees/:id')
+    .get(getSingleTree)
 
   app
     .route('/api/v1/zip')
