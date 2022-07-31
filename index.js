@@ -29,7 +29,8 @@ const getTrees = (request, response) => {
   }
 
   const getSingleTree = (request, response) => {
-    pool.query('SELECT * FROM trees, WHERE id = $1', [id], (error, results) => {
+    const id = parseInt(request.params.id)
+    pool.query('SELECT * FROM trees WHERE id = $1', [id], (error, results) => {
       if (error) {
         throw error
       }
