@@ -8,7 +8,7 @@ zip_code CHAR(5),
 growing_zone INTEGER
 );
 
-INSERT INTO zip_codes (id, sid, default_state, default_city, default_type, zip_code, growing_zone) VALUES
+INSERT INTO zip_codes (id, sid, default_state, city, default_type, zip_code, growing_zone) VALUES
 (4900, 7, 'CO', 'AGATE', 'STANDARD', '80101', 5),
 (4901, 7, 'CO', 'AGUILAR', 'STANDARD', '81020', 6),
 (4902, 7, 'CO', 'AKRON', 'STANDARD', '80720', 5),
@@ -16,7 +16,7 @@ INSERT INTO zip_codes (id, sid, default_state, default_city, default_type, zip_c
 (4904, 7, 'CO', 'ALAMOSA', 'UNIQUE', '81102', 4),
 (4905, 7, 'CO', 'ALLENSPARK', 'STANDARD', '80510', 5),
 (4906, 7, 'CO', 'ALMA', 'PO BOX', '80420', 5),
-(4907, 7, 'CO', 'ALMONT', 'STANDARD', '81210', 5);
+(4907, 7, 'CO', 'ALMONT', 'STANDARD', '81210', 5),
 (4908, 7, 'CO', 'AMHERST', 'STANDARD', '80721', 5 ),
 (4909, 7, 'CO', 'ANTON', 'STANDARD', '80801', 5),
 (4910, 7, 'CO', 'ANTONITO', 'STANDARD', '81120', 4),
@@ -592,7 +592,7 @@ INSERT INTO zip_codes (id, sid, default_state, default_city, default_type, zip_c
 (5480, 7, 'CO', 'SPRINGFIELD', 'STANDARD', '81073', 6),
 (5481, 7, 'CO', 'STEAMBOAT SPRINGS', 'PO BOX', '80477', 5),
 (5482, 7, 'CO', 'STEAMBOAT SPRINGS', 'STANDARD', '80487', 4),
-(5483, 7, 'CO', 'STEAMBOAT SPRINGS', 'PO BOX', '80488', 4);
+(5483, 7, 'CO', 'STEAMBOAT SPRINGS', 'PO BOX', '80488', 4),
 (5484, 7, 'CO', 'STERLING', 'STANDARD', '80751', 5),
 (5485, 7, 'CO', 'STONEHAM', 'STANDARD', '80754', 5),
 (5486, 7, 'CO', 'STRASBURG', 'STANDARD', '80136', 5),
