@@ -140,7 +140,7 @@ INSERT INTO zip_codes (id, sid, default_state, city, default_type, zip_code, har
 (5153, 7, 'CO', 'DENVER', 'UNIQUE', '80291', '5b'),
 (5154, 7, 'CO', 'DENVER', 'STANDARD', '80293', '5b'),
 (5155, 7, 'CO', 'DENVER', 'STANDARD', '80294', '5b'),
-(5156, 7, 'CO', 'DENVER', 'STANDARD', '80299', '5b')
+(5156, 7, 'CO', 'DENVER', 'STANDARD', '80299', '5b'),
 (5166, 7, 'CO', 'DURANGO', 'STANDARD', '81301', '6a'),
 -- 5166 was causing an error on terminal
 (5167, 7, 'CO', 'DURANGO', 'PO BOX', '81302', '6a'),
