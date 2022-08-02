@@ -1,4 +1,4 @@
-# 🌳Treezy-API
+# 🌳 Treezy-API
 
 
 ## Table of Contents
