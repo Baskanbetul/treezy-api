@@ -25,7 +25,7 @@ const getZip = (request, response) => {
     // const client = await pool.connect();
     // const result = await client.query('SELECT * FROM zip_codes');
     // const results = { 'results': (result) ? result.rows : null};
-    const resp = results ? results.rows : null;
+    const resp = results ? results.rows : [];
     response.status(200).json(resp);
     // // res.render('api/v1/zip', results );
     // client.release();
