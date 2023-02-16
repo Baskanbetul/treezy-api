@@ -18,14 +18,18 @@ const getTrees = (request, response) => {
   console.log('get trees request')
 }
 
-const getZip = async (request, response) => {
+// const getZip = async (request, response) => {
+const getZip = (request, response) => {
   try {
-    const client = await pool.connect();
-    const result = await client.query('SELECT * FROM zip_codes');
-    const results = { 'results': (result) ? result.rows : null};
-    response.status(200).json(results.rows)
-    // res.render('api/v1/zip', results );
-    client.release();
+    pool.query('SELECT * FROM zip_codes', (error, results) => {
+    // const client = await pool.connect();
+    // const result = await client.query('SELECT * FROM zip_codes');
+    // const results = { 'results': (result) ? result.rows : null};
+    const resp = results ? results.rows : null;
+    response.status(200).json(resp);
+    // // res.render('api/v1/zip', results );
+    // client.release();
+    }) 
   } catch (err) {
     console.error(err);
     res.send("Error " + err);
@@ -43,6 +47,7 @@ const getZip = async (request, response) => {
   //   res.send("Error " + err);
   // }
 }
+
 
 const getSingleTree = (request, response) => {
   const id = parseInt(request.params.id)
