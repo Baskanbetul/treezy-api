@@ -19,13 +19,18 @@ const getTrees = (request, response) => {
 }
 
 const getZip = (request, response) => {
-  pool.query('SELECT * FROM zip_codes', (error, results) => {
-    if (error) {
-      throw error
-    }
-    response.status(200).json(results.rows)
-  })
-  console.log('get zip codes request')
+  try {
+    pool.query('SELECT * FROM zip_codes', (error, results) => {
+      if (error) {
+        throw error
+      }
+      response.status(200).json(results.rows)
+    })
+    console.log('get zip codes request')
+  } catch {
+    console.log('no such zip code')
+    throw error
+  }
 }
 
 const getSingleTree = (request, response) => {
