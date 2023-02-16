@@ -23,7 +23,8 @@ const getZip = async (request, response) => {
     const client = await pool.connect();
     const result = await client.query('SELECT * FROM zip_codes');
     const results = { 'results': (result) ? result.rows : null};
-    res.render('api/v1/zip', results );
+    response.status(200).json(results.rows)
+    // res.render('api/v1/zip', results );
     client.release();
   } catch (err) {
     console.error(err);
