@@ -20,29 +20,29 @@ const getTrees = (request, response) => {
 
 // const getZip = async (request, response) => {
 const getZip = (request, response) => {
-  try {
-    pool.query('SELECT * FROM zip_codes', (error, results) => {
-    // const client = await pool.connect();
-    // const result = await client.query('SELECT * FROM zip_codes');
-    // const results = { 'results': (result) ? result.rows : null};
-    // const resp = results ? results.rows : [];
-    error ? response.status(200).json(results.rows) : response.send("Error: unknown zip");
-    // response.status(200).json(resp);
-    // // res.render('api/v1/zip', results );
-    // client.release();
-    }) 
-  } catch (err) {
-    console.error(err);
-    response.send("Error " + err);
-  }
   // try {
   //   pool.query('SELECT * FROM zip_codes', (error, results) => {
-  //     if (error) {
-  //       throw error
-  //     }
-  //     response.status(200).json(results.rows)
-  //   })
-  //   console.log('get zip codes request')
+  //   // const client = await pool.connect();
+  //   // const result = await client.query('SELECT * FROM zip_codes');
+  //   // const results = { 'results': (result) ? result.rows : null};
+  //   // const resp = results ? results.rows : [];
+  //   error ? response.status(200).json(results.rows) : response.send("Error: unknown zip");
+  //   // response.status(200).json(resp);
+  //   // // res.render('api/v1/zip', results );
+  //   // client.release();
+  //   }) 
+  // } catch (err) {
+  //   console.error(err);
+  //   response.send("Error " + err);
+  // }
+  // try {
+    pool.query('SELECT * FROM zip_codes', (error, results) => {
+      if (error) {
+        throw error
+      }
+      response.status(200).json(results.rows)
+    })
+    console.log('get zip codes request')
   // } catch (err) {
   //   console.error(err);
   //   res.send("Error " + err);
